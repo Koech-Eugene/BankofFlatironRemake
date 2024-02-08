@@ -34,13 +34,6 @@
       "description": "Lyft Ride",
       "category": "Transportation",
       "amount": -13.25
-    },
-    {
-      "description": "New movie",
-      "amount": "1500",
-      "date": "2024-02-13",
-      "category": "Movie",
-      "id": "10"
     }
   ]
 }

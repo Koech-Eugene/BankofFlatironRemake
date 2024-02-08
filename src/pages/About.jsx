@@ -1,9 +1,20 @@
+import bank from "../assets/bank2.jpg";
 function About() {
   return (
     <>
       <div className="container-fluid">
         <h3>Welcome to Flatiron Bank</h3>
-        <img src="./src/assets/bank1.jpeg" alt="Bank Image" />
+        <img
+          src={bank}
+          alt="Bank Image"
+          style={{
+            width: '10vw',
+            height: '10vh',
+            borderRadius: '2px',
+            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // Add a subtle box shadow
+  
+          }}
+        />
         <article>
           At Flatiron Bank, we are committed to providing our customers with
           exceptional financial services and building strong, lasting

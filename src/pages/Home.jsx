@@ -7,6 +7,7 @@ import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect } from "react";
 import UpdateForm from "../components/UpdateForm";
+import TransForm from "./TransForm";
 
 function Home() {
   // state to hold transactions
@@ -201,7 +202,8 @@ function Home() {
           transactions={filteredTransactions}
           onDelete={handleDelete}
         />
-        <AddTransactionForm onAdd={addTransaction} />
+        {/* <AddTransactionForm onAdd={addTransaction} /> */}
+        <TransForm onAdd={addTransaction}/>
         <UpdateForm
           getAmount={getAmount}
           getCategory={getCategory}
