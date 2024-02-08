@@ -125,7 +125,7 @@ function Home() {
   const performPatch = async (updatedTransaction) => {
     try {
       const patchRespnse = await fetch(
-        `http://localhost:3000/transactions/${updatedTransaction.id}`,
+        `http://localhost:8001/transactions/${updatedTransaction.id}`,
         {
           method: "PATCH",
           headers: {
