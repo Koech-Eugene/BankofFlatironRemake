@@ -3,13 +3,17 @@ function About() {
   return (
     <>
       <div className="container-fluid" style={{placeItems:"center"}}>
+        <br></br>
+        <br></br>
+       
         <h3>Welcome to Flatiron Bank</h3>
         <img
           src={bank}
           alt="Bank Image"
           style={{
-            width: '100%',
-            height: '70%',
+
+            width: '30vw',
+            height: '20vh',
             borderRadius: '2px',
             boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
           

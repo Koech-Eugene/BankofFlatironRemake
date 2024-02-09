@@ -23,17 +23,24 @@
     },
     {
       "id": "7",
-      "date": "2019-12-07",
-      "description": "Birthday Check from Grandma",
-      "category": "Gift",
-      "amount": 50
+      "date": "1111-11-11",
+      "description": "went swimming",
+      "category": "Food",
+      "amount": "200"
     },
     {
       "id": "8",
-      "date": "2019-12-09",
-      "description": "Lyft Ride",
-      "category": "Transportation",
-      "amount": -13.25
+      "date": "1111-11-11",
+      "description": "went swimming",
+      "category": "sports",
+      "amount": "8.75"
+    },
+    {
+      "id": "5463",
+      "description": "dbjbfhbzxh c",
+      "amount": "8.75",
+      "date": "1111-11-12",
+      "category": "Food"
     }
   ]
 }

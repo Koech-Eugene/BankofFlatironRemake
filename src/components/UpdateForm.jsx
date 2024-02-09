@@ -7,9 +7,13 @@ function UpdateTransactionForm({
   getAmount,
   onUpdateButtonClicked,
   getUpdatedId,
+  visability
+  
+  
+
 }) {
   return (
-    <form>
+  <form style={{display:visability}}>
       <label htmlFor="date">Date</label>
       <input id="date" type="date" placeholder="Date" onChange={getDate} />
 

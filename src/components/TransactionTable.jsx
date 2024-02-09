@@ -1,14 +1,12 @@
 import React from "react"
 import '../../src/App.css'
 import { Table } from "react-bootstrap"
-export default function TransactionTable({transactions, onDelete, onEdit}){
+export default function TransactionTable({transactions, onDelete, displayEdit}){
 
    const handleDelete = (id) => {
           onDelete(id)
    }
-   const handleEdit = (id) =>{
-      onEdit(id)
-   }
+  
     return (
        <>
          <div className="container">
@@ -33,7 +31,7 @@ export default function TransactionTable({transactions, onDelete, onEdit}){
                           <td>{transaction.category}</td>
                           <td>
                              <button onClick={() => handleDelete(transaction.id)} className="btn btn-danger">Delete</button>
-                             <button onClick={() => handleEdit(transaction.id)} className="btn btn-primary">Edit</button>
+                             <button onClick={displayEdit} className="btn btn-primary">Edit</button>
                           </td>
                      </tr>
                   ))}

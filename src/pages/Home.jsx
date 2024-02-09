@@ -165,6 +165,18 @@ function Home() {
     performPatch(updatedTransaction);
   }
 
+  const [editVisable, setEditVisable] = useState(false)
+  const [visability, setVisability] = useState("none")
+  function displayEdit () {
+      const changedEditVisable = !editVisable
+      setEditVisable(changedEditVisable)
+      const visabilityVar =  editVisable ?  'block' : 'none'
+      setVisability(visabilityVar) 
+
+      
+      
+  }
+
   return (
     <>
       <div className="App">
@@ -201,6 +213,9 @@ function Home() {
         <TransactionTable
           transactions={filteredTransactions}
           onDelete={handleDelete}
+          displayEdit={displayEdit}
+          visablity={visability}
+
         />
         {/* <AddTransactionForm onAdd={addTransaction} /> */}
         {/* <TransForm onAdd={addTransaction}/> */}
@@ -211,6 +226,8 @@ function Home() {
           getDate={getDate}
           getUpdatedId={getUpdateId}
           onUpdateButtonClicked={onUpdateButtonClicked}
+          visability={visability}
+       
         />
       </div>
     </>

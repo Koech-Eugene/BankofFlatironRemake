@@ -40,7 +40,7 @@ function App() {
             <Link to="about">About</Link>
           </li>
           <li>
-            <Link to="transForm">Transaction Form</Link>
+            <Link to="transForm">Add Transaction Form</Link>
           </li>
         </ul>
       </nav>
