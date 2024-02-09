@@ -203,7 +203,7 @@ function Home() {
           onDelete={handleDelete}
         />
         {/* <AddTransactionForm onAdd={addTransaction} /> */}
-        <TransForm onAdd={addTransaction}/>
+        {/* <TransForm onAdd={addTransaction}/> */}
         <UpdateForm
           getAmount={getAmount}
           getCategory={getCategory}

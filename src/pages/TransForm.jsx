@@ -1,6 +1,9 @@
 import { useState } from "react";
 
 export default function TransForm({ onAdd }) {
+
+  
+  
   const [newTransaction, setNewTransaction] = useState({
     description: "",
     amount: "",

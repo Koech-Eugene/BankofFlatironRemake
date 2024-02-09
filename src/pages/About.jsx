@@ -2,16 +2,17 @@ import bank from "../assets/bank2.jpg";
 function About() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid" style={{placeItems:"center"}}>
         <h3>Welcome to Flatiron Bank</h3>
         <img
           src={bank}
           alt="Bank Image"
           style={{
-            width: '10vw',
-            height: '10vh',
+            width: '100%',
+            height: '70%',
             borderRadius: '2px',
-            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', // Add a subtle box shadow
+            boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+          
   
           }}
         />
